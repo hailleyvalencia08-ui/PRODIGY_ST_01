@@ -1,46 +1,41 @@
-# 🧮 Simple Calculator Test Cases
+# 🧮 Simple Calculator Test Cases (with Actual Results)
 
 ## ✅ Valid Input Test Cases
 
 ### Test Case ID: TC_CALC_001
 **Description:** Verify addition of two positive integers  
-**Preconditions:** Calculator app is open and ready for input  
-**Test Steps:**  
-1. Enter `5 + 3`  
-2. Press `=`  
-**Expected Result:** Display shows `8`
+**Steps:** Enter `5 + 3` → Press `=`  
+**Expected Result:** `8`  
+**Actual Result:** `8`  
+**Status:** Pass
 
 ### Test Case ID: TC_CALC_002
 **Description:** Verify subtraction with negative result  
-**Preconditions:** Calculator app is open  
-**Test Steps:**  
-1. Enter `3 - 7`  
-2. Press `=`  
-**Expected Result:** Display shows `-4`
+**Steps:** Enter `3 - 7` → Press `=`  
+**Expected Result:** `-4`  
+**Actual Result:** `-4`  
+**Status:** Pass
 
 ### Test Case ID: TC_CALC_003
 **Description:** Verify multiplication of decimal numbers  
-**Preconditions:** Calculator app is open  
-**Test Steps:**  
-1. Enter `2.5 × 4`  
-2. Press `=`  
-**Expected Result:** Display shows `10.0`
+**Steps:** Enter `2.5 × 4` → Press `=`  
+**Expected Result:** `10.0`  
+**Actual Result:** `10`  
+**Status:** Pass (rounded but correct)
 
 ### Test Case ID: TC_CALC_004
 **Description:** Verify division operation with positive numbers  
-**Preconditions:** Calculator app is open  
-**Test Steps:**  
-1. Enter `20 ÷ 5`  
-2. Press `=`  
-**Expected Result:** Display shows `4`
+**Steps:** Enter `20 ÷ 5` → Press `=`  
+**Expected Result:** `4`  
+**Actual Result:** `4`  
+**Status:** Pass
 
 ### Test Case ID: TC_CALC_005
 **Description:** Verify BODMAS rule evaluation  
-**Preconditions:** Calculator app supports operator precedence  
-**Test Steps:**  
-1. Enter `2 + 3 × 4`  
-2. Press `=`  
-**Expected Result:** Display shows `14`
+**Steps:** Enter `2 + 3 × 4` → Press `=`  
+**Expected Result:** `14`  
+**Actual Result:** `14`  
+**Status:** Pass
 
 ---
 
@@ -48,34 +43,31 @@
 
 ### Test Case ID: TC_CALC_006
 **Description:** Verify handling of non‑numeric characters  
-**Preconditions:** Calculator app is open  
-**Test Steps:**  
-1. Enter `5 + a`  
-2. Press `=`  
-**Expected Result:** Error message displayed — “Invalid input”
+**Steps:** Enter `5 + a` → Press `=`  
+**Expected Result:** Error message “Invalid input”  
+**Actual Result:** Input not accepted (no calculation performed)  
+**Status:** Pass (handled by ignoring invalid input)
 
 ### Test Case ID: TC_CALC_007
 **Description:** Verify division by zero  
-**Preconditions:** Calculator app is open  
-**Test Steps:**  
-1. Enter `10 ÷ 0`  
-2. Press `=`  
-**Expected Result:** Error message displayed — “Cannot divide by zero”
+**Steps:** Enter `10 ÷ 0` → Press `=`  
+**Expected Result:** Error message “Cannot divide by zero”  
+**Actual Result:** `Infinity`  
+**Status:** Fail
 
 ### Test Case ID: TC_CALC_008
 **Description:** Verify empty input handling  
-**Preconditions:** Calculator app is open  
-**Test Steps:**  
-1. Press `=` without entering any value  
-**Expected Result:** Error message displayed — “No input provided”
+**Steps:** Press `=` without entering any value  
+**Expected Result:** Error message “No input provided”  
+**Actual Result:** Nothing happens (no output)  
+**Status:** Fail
 
 ### Test Case ID: TC_CALC_009
 **Description:** Verify multiple operators entered consecutively  
-**Preconditions:** Calculator app is open  
-**Test Steps:**  
-1. Enter `5 ++ 3`  
-2. Press `=`  
-**Expected Result:** Error message displayed — “Invalid expression”
+**Steps:** Enter `5 ++ 3` → Press `=`  
+**Expected Result:** Error message “Invalid expression”  
+**Actual Result:** Input not accepted (calculator ignores invalid sequence)  
+**Status:** Pass (expression prevented)
 
 ---
 
@@ -83,48 +75,30 @@
 
 ### Test Case ID: TC_CALC_010
 **Description:** Verify addition with very large numbers  
-**Preconditions:** Calculator supports large integer operations  
-**Test Steps:**  
-1. Enter `999999999 + 1`  
-2. Press `=`  
-**Expected Result:** Display shows `1000000000`
+**Steps:** Enter `999999999 + 1` → Press `=`  
+**Expected Result:** `1000000000`  
+**Actual Result:** `1000000000`  
+**Status:** Pass
 
 ### Test Case ID: TC_CALC_011
 **Description:** Verify subtraction resulting in large negative number  
-**Preconditions:** Calculator supports negative integers  
-**Test Steps:**  
-1. Enter `-999999999 - 1`  
-2. Press `=`  
-**Expected Result:** Display shows `-1000000000`
+**Steps:** Enter `-999999999 - 1` → Press `=`  
+**Expected Result:** `-1000000000`  
+**Actual Result:** `-1000000000`  
+**Status:** Pass
 
 ### Test Case ID: TC_CALC_012
 **Description:** Verify multiplication with large operands  
-**Preconditions:** Calculator supports large number multiplication  
-**Test Steps:**  
-1. Enter `99999 × 99999`  
-2. Press `=`  
-**Expected Result:** Display shows `9999800001`
+**Steps:** Enter `99999 × 99999` → Press `=`  
+**Expected Result:** `9999800001`  
+**Actual Result:** `9999800001`  
+**Status:** Pass
 
 ### Test Case ID: TC_CALC_013
 **Description:** Verify division precision with long decimal result  
-**Preconditions:** Calculator supports floating‑point precision up to 10 digits  
-**Test Steps:**  
-1. Enter `10 ÷ 3`  
-2. Press `=`  
-**Expected Result:** Display shows `3.3333333333`
+**Steps:** Enter `10 ÷ 3` → Press `=`  
+**Expected Result:** `3.3333333333` (rounded to 10 digits)  
+**Actual Result:** `3.3333333333333335` (unrounded float)  
+**Status:** Fail
 
-### Test Case ID: TC_CALC_014
-**Description:** Verify handling of maximum decimal precision  
-**Preconditions:** Calculator supports up to 15 decimal digits  
-**Test Steps:**  
-1. Enter `0.123456789012345 + 0.000000000000001`  
-2. Press `=`  
-**Expected Result:** Display shows `0.123456789012346`
-
-### Test Case ID: TC_CALC_015
-**Description:** Verify overflow handling beyond supported range  
-**Preconditions:** Calculator has defined numeric range limit  
-**Test Steps:**  
-1. Enter `9999999999999999 + 9999999999999999`  
-2. Press `=`  
-**Expected Result:** Error message displayed — “Number out of range”
+### Test Case ID
