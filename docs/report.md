@@ -14,3 +14,8 @@ To design and document comprehensive test cases for a simple calculator applicat
 - Division by zero is flagged with an appropriate error message.
 - Non-numeric inputs are rejected with error handling.
 - Large numbers and decimal precision are tested to ensure robustness.
+  
+## Defects Found
+- Division by zero displays "Infinity" instead of an error message.
+- Decimal division results are not rounded (e.g., 10 ÷ 3 shows 3.3333333333333335).
+- Large number operations may not be formatted in scientific notation.
