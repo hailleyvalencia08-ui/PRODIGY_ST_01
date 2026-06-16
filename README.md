@@ -32,9 +32,6 @@ The calculator is expected to support:
 All test cases were executed against the demo calculator:  
 [sCalc Demo](https://dunizb.github.io/sCalc/index.html)
 
-![Addition Test](docs/screenshot_addition.png)
-![Division Error](docs/screenshot_division_error.png)
-
 ## 👩‍💻 Author
 Internship Task completed by **Hailley Valencia JG**  
 - Track: Software Testing (ST)  
