@@ -11,11 +11,16 @@ To design and document comprehensive test cases for a simple calculator applicat
 
 ## Key Findings
 - Calculator correctly handles valid inputs and produces expected results.
-- Division by zero is flagged with an appropriate error message.
-- Non-numeric inputs are rejected with error handling.
-- Large numbers and decimal precision are tested to ensure robustness.
-  
-## Defects Found
-- Division by zero displays "Infinity" instead of an error message.
+- Division by zero currently displays "Infinity" instead of an error message.
 - Decimal division results are not rounded (e.g., 10 ÷ 3 shows 3.3333333333333335).
-- Large number operations may not be formatted in scientific notation.
+- Empty input produces no output instead of an error message.
+- Very large numbers are calculated but not flagged as overflow.
+
+## Defects Found
+- **TC_CALC_007:** Division by zero → Expected error message, Actual result "Infinity".  
+- **TC_CALC_008:** Empty input → Expected error message, Actual result no output.  
+- **TC_CALC_013:** Division precision → Expected rounded result, Actual result unrounded float.  
+- **TC_CALC_015:** Overflow handling → Expected error message, Actual result large number displayed.
+
+## Conclusion
+The calculator performs well for standard operations but fails in critical edge cases such as division by zero, empty input handling, precision control, and overflow detection. These defects should be addressed to improve reliability and user experience.
