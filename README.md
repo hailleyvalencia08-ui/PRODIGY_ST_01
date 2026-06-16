@@ -32,11 +32,7 @@ The calculator is expected to support:
 All test cases were executed against the demo calculator:  
 [sCalc Demo](https://dunizb.github.io/sCalc/index.html)
 
-## 📸 Screenshots
-### Addition Test
 ![Addition Test](docs/screenshot_addition.png)
-
-### Division by Zero Error
 ![Division Error](docs/screenshot_division_error.png)
 
 ## 👩‍💻 Author
