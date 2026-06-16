@@ -21,23 +21,26 @@ The calculator is expected to support:
 - Test the application’s behavior under boundary conditions (e.g., very large numbers, decimal precision).  
 - Provide structured documentation that can be used by developers and testers for validation.  
 
-## 📂 File Structure
-- **README.md** → Overview of the repository and task details  
-- **TEST_CASES.md** → Contains all detailed test cases with ID, description, preconditions, steps, expected results, actual results, and status  
-- **docs/** → Supporting notes, reports, enhancements, and optional screenshots  
+## 📂 Repository Contents
+- [TEST_CASES.md](TEST_CASES.md) → Detailed test cases with ID, description, preconditions, steps, expected results, actual results, and status  
+- [Notes](docs/notes.md) → Thought process and assumptions  
+- [Report](docs/report.md) → Summary, scope, and defects found  
+- [Enhancements](docs/enhancements.md) → Suggested future improvements  
+- Screenshots (inside `docs/`) → Visual proof of test execution  
 
 ## 🧪 Demo Site Tested
 All test cases were executed against the demo calculator:  
 [sCalc Demo](https://dunizb.github.io/sCalc/index.html)
 
-## 📸 Screenshots (Optional)
-- Division by Zero Error → ![Division Error](docs/screenshot_division_error.png)  
-- Addition Test → ![Addition Test](docs/screenshot_addition.png)  
-- Decimal Precision Test → ![Decimal Test](docs/screenshot_decimal.png)  
+## 📸 Screenshots
+### Addition Test
+![Addition Test](docs/screenshot_addition.png)
+
+### Division by Zero Error
+![Division Error](docs/screenshot_division_error.png)
 
 ## 👩‍💻 Author
 Internship Task completed by **Hailley Valencia JG**  
 - Track: Software Testing (ST)  
 - Task Number: 01  
 - Organization: Prodigy InfoTech  
-
